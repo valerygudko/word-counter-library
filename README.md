@@ -8,6 +8,8 @@ Assumptions:
     4. If input word does not exist in the static dictionary of Translator respective error message with 404 error code will be returned.
     5. If input word has non-alphabetic characters error message with 422 error code will be returned.
     6. If input array of words contains invalid word (any of the type described in points 3-5) the input array of words won't be processed and respective error will be returned.
+    
+Re: further enhancements, to expose lib functionality to external clients 2 apis were created to represent 2 methods (API documentation could be added along with security in place). For resiliency Hazelcast has been used for distrubuted caching (further config ie TTL etc could be added).
 
 ## Get up and running
 
